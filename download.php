@@ -1,13 +1,12 @@
 <?php
 	require('secrets.php');
-	require('config.php');
 
 	set_time_limit(0);
 
 	$mapbox = [
 		'accessToken' => $_SECRETS['mapboxAccessToken'],
-		'username' => $_CONFIG['mapboxUsername'],
-		'style' => $_CONFIG['mapboxStyle']
+		'username' => $_SECRETS['mapboxUsername'],
+		'style' => $_SECRETS['mapboxStyle']
 	];
 
 	function getTile($lat, $lon, $zoom) {
