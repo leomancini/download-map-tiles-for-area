@@ -3,6 +3,7 @@
 
 	set_time_limit(0);
 
+	// These are in Apple Notes app, copy/paste into secrets.php in the same directory
 	$mapbox = [
 		'accessToken' => $_SECRETS['mapboxAccessToken'],
 		'username' => $_SECRETS['mapboxUsername'],
